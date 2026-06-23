@@ -4,6 +4,7 @@ import portfolioimg from "./assets/portfolio.png";
 import weatherimg from "./assets/weather.png";
 import todoimg from "./assets/todo.png";
 import spotifyimg from "./assets/spotify.png";
+import movieimg from "./assets/moviefinder.png";
 
 const projects = [
   {
@@ -12,10 +13,10 @@ const projects = [
     title: "Movie App",
     desc: "A movie browsing application built with React and TMDB API. Users can explore trending movies, search titles and view detailed movie information.",
     tech: ["React", "TMDB API", "CSS"],
-    image: "/movieapp.png",
+    image: `${movieimg}`,
     alt: "Movie App",
-       livebtn:" https://github.com/anish-123-2006/spotify_clone",
-    gitbtn:"https://anish-123-2006.github.io/spotify_clone/",
+       livebtn:" https://moviefinder-lo5g.vercel.app/",
+    gitbtn:"https://github.com/anish-123-2006/moviefinder",
   },
   {
     number: "02",
