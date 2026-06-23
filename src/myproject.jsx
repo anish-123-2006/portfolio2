@@ -27,7 +27,7 @@ const projects = [
     image: portfolioimg,
     alt: "Portfolio Website",
     livebtn: "https://vite-project-eight-ruby.vercel.app/",
-    gitbtn: "https://github.com/anish-123-2006/portfolio",
+    gitbtn: "https://github.com/anish-123-2006/portfolio2",
   },
   {
     number: "03",
