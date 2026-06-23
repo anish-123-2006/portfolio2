@@ -13,10 +13,10 @@ const projects = [
     title: "Movie App",
     desc: "A movie browsing application built with React and TMDB API. Users can explore trending movies, search titles and view detailed movie information.",
     tech: ["React", "TMDB API", "CSS"],
-    image: `${movieimg}`,
+    image: movieimg,
     alt: "Movie App",
-       livebtn:" https://moviefinder-lo5g.vercel.app/",
-    gitbtn:"https://github.com/anish-123-2006/moviefinder",
+    livebtn: "https://moviefinder-lo5g.vercel.app/",
+    gitbtn: "https://github.com/anish-123-2006/moviefinder",
   },
   {
     number: "02",
@@ -24,10 +24,10 @@ const projects = [
     title: "Portfolio Website",
     desc: "A modern portfolio website built to showcase my skills, projects and frontend development journey with a premium UI.",
     tech: ["React", "CSS", "Responsive Design"],
-    image: `${portfolioimg}`,
+    image: portfolioimg,
     alt: "Portfolio Website",
-       livebtn:" https://github.com/anish-123-2006/spotify_clone",
-    gitbtn:"https://anish-123-2006.github.io/spotify_clone/",
+    livebtn: "https://vite-project-eight-ruby.vercel.app/",
+    gitbtn: "https://github.com/anish-123-2006/portfolio",
   },
   {
     number: "03",
@@ -35,11 +35,10 @@ const projects = [
     title: "Weather App",
     desc: "A weather forecasting application that fetches real-time weather data from an API and displays current conditions with a clean user interface.",
     tech: ["JavaScript", "Weather API", "CSS"],
-    image: `${weatherimg}`,
+    image: weatherimg,
     alt: "Weather App",
-    livebtn:" https://anish-123-2006.github.io/weather-app/",
-    gitbtn:"https://github.com/anish-123-2006/weather-app",
-
+    livebtn: "https://anish-123-2006.github.io/weather-app/",
+    gitbtn: "https://github.com/anish-123-2006/weather-app",
   },
   {
     number: "04",
@@ -47,10 +46,10 @@ const projects = [
     title: "To Do App",
     desc: "A task management application that stores data in browser local storage, allowing users to manage tasks even after refreshing the page.",
     tech: ["JavaScript", "Local Storage", "CSS"],
-    image: `${todoimg}`,
+    image: todoimg,
     alt: "To Do App",
-       livebtn:" https://anish-123-2006.github.io/todo/",
-    gitbtn:"https://github.com/anish-123-2006/todo",
+    livebtn: "https://anish-123-2006.github.io/todo/",
+    gitbtn: "https://github.com/anish-123-2006/todo",
   },
   {
     number: "05",
@@ -58,10 +57,10 @@ const projects = [
     title: "Spotify Clone",
     desc: "A responsive music player web application featuring playlist management, song controls and a modern Spotify-inspired UI.",
     tech: ["HTML", "CSS", "JavaScript"],
-    image:  `${spotifyimg}`,
+    image: spotifyimg,
     alt: "Spotify Clone",
-        livebtn:"https://anish-123-2006.github.io/spotify_clone/ ",
-    gitbtn:"https://github.com/anish-123-2006/spotify_clone",
+    livebtn: "https://anish-123-2006.github.io/spotify_clone/",
+    gitbtn: "https://github.com/anish-123-2006/spotify_clone",
   },
 ];
 
@@ -74,15 +73,17 @@ function ProjectCard({ project, reverse }) {
         <h2>{project.title}</h2>
         <p>{project.desc}</p>
         <div className="tech-stack">
-          {project.tech.map((t) => <span key={t}>{t}</span>)}
+          {project.tech.map((t) => (
+            <span key={t}>{t}</span>
+          ))}
         </div>
         <div className="project-buttons">
-<button onClick={() => window.open(project.livebtn, "_blank")}>
-  Live Demo
-</button>
-          <button onClick={() => window.open(project.gitbtn, "_blank")}>
-  Github
-</button>
+          <a href={project.livebtn} target="_blank" rel="noreferrer">
+            Live Demo
+          </a>
+          <a href={project.gitbtn} target="_blank" rel="noreferrer">
+            Github
+          </a>
         </div>
       </div>
       <div className="project-image">
